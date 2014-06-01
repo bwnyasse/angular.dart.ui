@@ -76,5 +76,6 @@ class DemoModule extends Module {
     bind(DragDropHandlerDemoController);
     bind(TypeaheadDemoController);
     bind(SortableController);
+    bind(SortableMultiController);
   }
 }
