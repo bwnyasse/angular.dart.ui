@@ -66,7 +66,8 @@ part 'tests/utils/content_append_tests.dart';
 void main() {
   useHtmlEnhancedConfiguration();
   group('All Tests:', () {
-    group('Accordion', () => accordionTests());
+    group('Typeahead', () => typeaheadTests());
+    group('Acoordion', () => accordionTests());
     group('Alert', () => alertTests());
     group('Buttons', () => buttonsTests());
     group('Collapse', () => collapseTests());
@@ -87,7 +88,7 @@ void main() {
     group('Carousel', () => carouselTests());
     group('Tooltip', () => tooltipTests());
     group('Popover', () => popoverTests());
-    group('Typeahead', () => typeaheadTests());
+    group('ContentAppend', () => contentAppendTests());
   });
 }
 
