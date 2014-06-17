@@ -9,6 +9,7 @@ import 'package:angular/angular.dart';
 import 'package:angular/application_factory.dart';
 import 'package:angular_ui/angular_ui.dart';
 import 'package:angular_ui/utils/utils.dart';
+import 'package:logging/logging.dart';
 
 @MirrorsUsed(targets: const[
   'angular.ui',
@@ -40,6 +41,15 @@ part 'typeahead/typeahead_demo.dart';
  * Entry point into app.
  */
 main() {
+
+  hierarchicalLoggingEnabled = true;
+  Logger.root.level = Level.OFF;
+  Logger.root.onRecord.listen((LogRecord r) {
+    DateTime now = new DateTime.now();
+    dom.window.console.log('${now} [${r.level}] ${r.loggerName}: ${r.message}');
+  });
+  new Logger("angular.ui")..level = Level.FINER;
+
   applicationFactory()
     .addModule(new DemoModule())
     .run();
