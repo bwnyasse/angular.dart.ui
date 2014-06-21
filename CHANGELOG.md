@@ -1,3 +1,14 @@
+#Version 0.5.4, (2014/06/21)
+
+##Bug Fixes
+- Error when using typeahead-on-select=ctrl.setSelectedItem($item, $model, $label)
+
+#Version 0.5.3, (2014/06/18)
+
+##Bug Fixes
+- Typeahead placement of suggestion popover offset by approax 200px
+- Fix animation toggle and z-index calculation in ModalWindow
+
 #Version 0.5.2, (2014/06/17)
 
 ##Features
@@ -5,7 +16,7 @@
 
 ##Bug Fixes
 
-- <code>ModalWindow</code> must call dismiss method of top <code>ModalInstance</code> instead of <code>Modal.close</code>.
+- ModalWindow must call dismiss method of top ModalInstance instead of Modal.close.
 
 #Version 0.5.1, (2014/06/06)
 
@@ -15,12 +26,12 @@
 #Version 0.5.0, (2014/06/05)
 
 ##Features
-- All components have migrated away from Shadow DOM and <code>applyAuthorStyles</code>.
+- All components have migrated away from Shadow DOM and applyAuthorStyles.
 
 ##Bug Fixes
 
-- <code>ng-click</code> called multiple times
-- <code>DatePicker</code> tests fail with UTC+1
+- ng-click called multiple times
+- DatePicker tests fail with UTC+1
 
 #Version 0.4.0, (2014/05/16)
 
@@ -35,9 +46,9 @@
 
 ##Bug Fixes
 
-- Classes <code>Popover</code>, <code>Tooltip</code>, <code>ModalWindow</code>, <code>DatePicker</code> compiled to JavaScript don't work proper
-- Error compiling <code>Pagination</code> component to JavaScript
-- <code>Checkbox</code> component doesn't work proper in example
+- Classes Popover, Tooltip, ModalWindow, DatePicker compiled to JavaScript don't work proper
+- Error compiling Pagination component to JavaScript
+- Checkbox component doesn't work proper in example
 
 #Version 0.3.0, (2014/04/19)
 
@@ -67,7 +78,7 @@
 
 ##Bug Fixes
 
-- <code>Transition</code> and <code>Collapse</code> are not working as expected
+- Transition and Collapse are not working as expected
 
 #Version 0.1.0, (2014/01/14)
 
